@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИЭР — Инновационные Энергетические Решения</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2L38 11V29L20 38L2 29V11L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M20 8L32 14V26L20 32L8 26V14L20 8Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                        <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                        <path d="M20 2V8M38 11L32 14M38 29L32 26M20 38V32M2 29L8 26M2 11L8 14" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </span>
+                <span class="logo-text">ИЭР</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#certificates">Сертификаты</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:+78001234567" class="nav-phone">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <span>+7 (900) 300-06-00</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="glow-orb glow-1"></div>
+            <div class="glow-orb glow-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Работаем по всей России
+            </div>
+            <h1 class="hero-title">
+                <span class="line">Инновационные</span>
+                <span class="line accent">Энергетические</span>
+                <span class="line">Решения</span>
+            </h1>
+            <p class="hero-subtitle">Проектирование, наладка РЗА, поставка НКУ и услуги электролаборатории — полный цикл работ до 220 кВ</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="12">10</span>
+                    <span class="stat-label">лет на рынке</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="1000">450</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">выполненных объектов</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="220">70</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">специалистов</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="220">24/7</span>
+                    <span class="stat-label">поддержка</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#contacts" class="btn btn-primary">
+                    <span>Получить консультацию</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#services" class="btn btn-ghost">Наши услуги</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Листайте вниз</span>
+                <div class="scroll-line"><div class="scroll-dot"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 / О компании</span>
+                <h2 class="section-title">Экспертность, подтверждённая<br><span class="accent">цифрами и лицензиями</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead">Компания <strong>«ИЭР»</strong> специализируется на комплексном решении задач в сфере энергетики и автоматики. Мы работаем с объектами напряжением до 220 кВ по всей территории России.</p>
+                    <p>Все специалисты проходят регулярное повышение квалификации, аттестованы в органах Ростехнадзора и ежегодно подтверждают знания. Компания располагает полным пакетом лицензий и допусков СРО.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Лицензии Ростехнадзора</strong>
+                                <span>Все виды энергетической деятельности</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                            </div>
+                            <div>
+                                <strong>Допуски СРО</strong>
+                                <span>Проектирование и строительство энергообъектов</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <strong>Собственная электролаборатория</strong>
+                                <span>Аккредитована до 220 кВ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <div class="card-number">12+</div>
+                            <div class="card-label">лет опыта</div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <div class="card-number">1000+</div>
+                            <div class="card-label">реализованных проектов</div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <div class="card-number">50+</div>
+                            <div class="card-label">аттестованных специалистов</div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-accent"></div>
+                        <div class="card-content">
+                            <div class="card-number">220</div>
+                            <div class="card-label">кВ — макс. напряжение</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 / Услуги</span>
+                <h2 class="section-title">Полный цикл энергетических<br><span class="accent">работ под ключ</span></h2>
+            </div>
+            <div class="services-grid">
+                <!-- Проектирование -->
+                <div class="service-card" data-service="design">
+                    <div class="service-header">
+                        <div class="service-num">01</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Проектирование</h3>
+                    <p class="service-desc">Разработка и согласование проектной документации для энергетических объектов любой сложности.</p>
+                    <ul class="service-list">
+                        <li>Проекты ТП и КТП до 110 кВ</li>
+                        <li>Воздушные и кабельные линии до 20 кВ</li>
+                        <li>Системы РЗА, АСУ ТП, АИИС КУЭ</li>
+                        <li>Системы повышения категорийности (ДЭС, ГПЭС, ИБП)</li>
+                        <li>Реконструкция и ретрофит ячеек</li>
+                    </ul>
+                    <a href="#contacts" class="service-link">
+                        <span>Заказать проект</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Наладка РЗА -->
+                <div class="service-card" data-service="rza">
+                    <div class="service-header">
+                        <div class="service-num">02</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Наладка РЗА и АСУ ТП</h3>
+                    <p class="service-desc">Монтаж, наладка и техническое обслуживание вторичных систем на объектах до 110 кВ.</p>
+                    <ul class="service-list">
+                        <li>Монтаж и наладка РЗА</li>
+                        <li>Настройка АСУ ТП</li>
+                        <li>Внедрение АИИС КУЭ и СОПТ</li>
+                        <li>Наладка систем ЩСН</li>
+                        <li>Периодические проверки и испытания</li>
+                    </ul>
+                    <a href="#contacts" class="service-link">
+                        <span>Заказать наладку</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Поставка НКУ -->
+                <div class="service-card" data-service="nku">
+                    <div class="service-header">
+                        <div class="service-num">03</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Поставка НКУ и оборудования</h3>
+                    <p class="service-desc">Поставка низковольтных комплектных устройств, электрооборудования и материалов с гарантией.</p>
+                    <ul class="service-list">
+                        <li>НКУ любой сложности</li>
+                        <li>Резервные источники питания (ДЭС, ГПЭС, ИБП)</li>
+                        <li>Комплекты ЗИП и расходные материалы</li>
+                        <li>Кабельная продукция и арматура</li>
+                        <li>Ввод в эксплуатацию и обслуживание</li>
+                    </ul>
+                    <a href="#contacts" class="service-link">
+                        <span>Запросить поставку</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <!-- Электролаборатория -->
+                <div class="service-card" data-service="lab">
+                    <div class="service-header">
+                        <div class="service-num">04</div>
+                        <div class="service-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2v7.31"/><path d="M14 2v7.31"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 11-4 0"/><path d="M12 18v4"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Электролаборатория</h3>
+                    <p class="service-desc">Аккредитованная электролаборатория для испытаний и измерений в электроустановках до 220 кВ.</p>
+                    <ul class="service-list">
+                        <li>Измерение сопротивления изоляции до 220 кВ</li>
+                        <li>Испытание кабельных линий повышенным напряжением</li>
+                        <li>Проверка релейной аппаратуры</li>
+                        <li>Проверка УЗО и автоматических выключателей</li>
+                        <li>Измерение ПКЭ и нагрузок энергопотребления</li>
+                    </ul>
+                    <a href="#contacts" class="service-link">
+                        <span>Заказать испытания</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 / Проекты</span>
+                <h2 class="section-title">Реализованные<br><span class="accent">объекты</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card large">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">ТП 110/10 кВ</span>
+                        <h3>Реконструкция подстанции «Северная»</h3>
+                        <p>Полный комплекс работ: проектирование, поставка оборудования, монтаж, наладка РЗА, испытания электролабораторией.</p>
+                        <div class="project-meta">
+                            <span>2024</span>
+                            <span>Челябинская область</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M2 12h20"/></svg>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">КЛ 10 кВ</span>
+                        <h3>Строительство кабельных линий промзоны</h3>
+                        <div class="project-meta">
+                            <span>2024</span>
+                            <span>Санкт-Петербург</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">ДЭС 2×500 кВт</span>
+                        <h3>Система резервного питания дата-центра</h3>
+                        <div class="project-meta">
+                            <span>2023</span>
+                            <span>Московская область</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">РЗА + АСУ ТП</span>
+                        <h3>Модернизация защит подстанции 35/10 кВ</h3>
+                        <div class="project-meta">
+                            <span>2023</span>
+                            <span>Тюменская область</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Электролаборатория</span>
+                        <h3>Комплексные испытания 15 объектов сетевой компании</h3>
+                        <div class="project-meta">
+                            <span>2024</span>
+                            <span>Россия</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сертификаты -->
+    <section class="section certificates" id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 / Сертификаты</span>
+                <h2 class="section-title">Лицензии и<br><span class="accent">допуски</span></h2>
+            </div>
+            <div class="certificates-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>Лицензия Ростехнадзора</h4>
+                    <p>На осуществление деятельности в области использования атомной энергии (при наличии) и энергетического надзора</p>
+                    <span class="cert-num">№ ЛО-74-0001234</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    </div>
+                    <h4>Допуск СРО «Энергопроект»</h4>
+                    <p>Проектирование электросетевых объектов напряжением до 220 кВ</p>
+                    <span class="cert-num">№ СРО-П-12345</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h4>Допуск СРО «Энергострой»</h4>
+                    <p>Строительство, реконструкция и капитальный ремонт энергообъектов</p>
+                    <span class="cert-num">№ СРО-С-67890</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h4>Аккредитация электролаборатории</h4>
+                    <p>Испытания и измерения в электроустановках напряжением до 220 кВ</p>
+                    <span class="cert-num">№ АТ-12345</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h4>ISO 9001:2015</h4>
+                    <p>Система менеджмента качества в проектировании, монтаже и наладке</p>
+                    <span class="cert-num">№ RU123456</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h4>ISO 14001:2015</h4>
+                    <p>Система экологического менеджмента при выполнении энергетических работ</p>
+                    <span class="cert-num">№ RU654321</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <div class="contacts-grid">
+                <div class="contacts-info">
+                    <div class="section-header left">
+                        <span class="section-tag">05 / Контакты</span>
+                        <h2 class="section-title">Свяжитесь<br><span class="accent">с нами</span></h2>
+                    </div>
+                    <p class="contacts-lead">Оставьте заявку — наш инженер свяжется с вами в течение 30 минут в рабочее время.</p>
+                    <div class="contacts-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Адрес</strong>
+                                <span>г. Челябинск, ул. Энергетиков, 15, офис 402</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Телефон</strong>
+                                <a href="tel:+78001234567">+7 (800) 123-45-67</a>
+                                <a href="tel:+73512345678">+7 (351) 234-56-78</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <strong>E-mail</strong>
+                                <a href="mailto:info@ier-energo.ru">info@ier-energo.ru</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <strong>Режим работы</strong>
+                                <span>Пн—Пт: 08:00 — 18:00</span>
+                                <span>Сб—Вс: выходной</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-form-wrapper">
+                    <form class="contacts-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" name="name" placeholder="Иванов Иван" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Интересующая услуга</label>
+                            <select id="service" name="service">
+                                <option value="">Выберите услугу</option>
+                                <option value="design">Проектирование</option>
+                                <option value="rza">Наладка РЗА и АСУ ТП</option>
+                                <option value="nku">Поставка НКУ и оборудования</option>
+                                <option value="lab">Электролаборатория</option>
+                                <option value="complex">Комплекс услуг</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Опишите задачу..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Отправить заявку</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                        </button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 2L38 11V29L20 38L2 29V11L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <path d="M20 8L32 14V26L20 32L8 26V14L20 8Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <circle cx="20" cy="20" r="4" fill="currentColor"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">ИЭР</span>
+                    </a>
+                    <p>Инновационные Энергетические Решения. Проектирование, наладка, поставка оборудования и электролаборатория.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Разделы</h4>
+                    <ul>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#projects">Проекты</a></li>
+                        <li><a href="#certificates">Сертификаты</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#services">Проектирование</a></li>
+                        <li><a href="#services">Наладка РЗА</a></li>
+                        <li><a href="#services">Поставка НКУ</a></li>
+                        <li><a href="#services">Электролаборатория</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p>г. Челябинск, ул. Энергетиков, 15</p>
+                    <a href="tel:+78001234567">+7 (800) 123-45-67</a>
+                    <a href="mailto:info@ier-energo.ru">info@ier-energo.ru</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ООО «ИЭР». Все права защищены.</p>
+                <p>Лицензия Ростехнадзора № ЛО-74-0001234</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+        // Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Навбар при скролле
+        const navbar = document.getElementById('navbar');
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            lastScroll = currentScroll;
+        });
+
+        // Анимация чисел
+        const animateNumbers = () => {
+            const nums = document.querySelectorAll('.stat-num');
+            nums.forEach(num => {
+                const target = parseInt(num.dataset.target);
+                const duration = 2000;
+                const start = performance.now();
+                const animate = (now) => {
+                    const progress = Math.min((now - start) / duration, 1);
+                    const ease = 1 - Math.pow(1 - progress, 3);
+                    num.textContent = Math.floor(ease * target);
+                    if (progress < 1) requestAnimationFrame(animate);
+                };
+                requestAnimationFrame(animate);
+            });
+        };
+
+        // Intersection Observer для анимаций
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    if (entry.target.querySelector('.stat-num')) {
+                        animateNumbers();
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section, .service-card, .project-card, .cert-card, .about-card').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // Форма
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<span>Заявка отправлена!</span>';
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                e.target.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
