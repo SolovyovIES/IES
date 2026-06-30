@@ -161,12 +161,13 @@ ul {
 }
 
 .logo-icon {
-    width: 36px;
-    height: 36px;
+    width: 50px;
+    height: 50px;
     color: var(--accent-primary);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
 }
 
 .logo-icon svg {
@@ -179,6 +180,10 @@ ul {
     font-weight: 700;
     font-size: 1.35rem;
     letter-spacing: 0.05em;
+}
+
+.logo:hover .logo-icon {
+transform: rotate(360deg);
 }
 
 /* Nav Links */
@@ -392,7 +397,6 @@ ul {
     position: relative;
     z-index: 1;
     max-width: 900px;
-    text-align: center;
 }
 
 .hero-badge {
@@ -456,10 +460,11 @@ ul {
     font-size: clamp(1rem, 2vw, 1.25rem);
     color: var(--text-secondary);
     max-width: 600px;
-    margin: 0 auto 48px;
+    margin: 0 0 48px;
     line-height: 1.7;
     opacity: 0;
     animation: fadeInUp 0.7s ease forwards 0.75s;
+    text-align: left;
 }
 
 /* Hero Stats */
