@@ -528,7 +528,10 @@
                     </div>
                 </div>
                 <div class="contacts-form-wrapper">
-                    <form class="contacts-form" id="contactForm">
+                    <form class="contacts-form" id="contactForm" action="https://formsubmit.co/hayevgen93@gmail.com" method="POST">
+                        <input type="text" name="_honey" style="display:none">
+                        <!-- <input type="hidden" name="_captcha" value="false"> -->
+                        <input type="hidden" name="_subject" value="Новая заявка с сайта!"> 
                         <div class="form-group">
                             <label for="name">Ваше имя</label>
                             <input type="text" id="name" name="name" placeholder="Иванов Иван" required>
@@ -539,7 +542,7 @@
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="example@mail.ru">
+                            <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
                         </div>
                         <div class="form-group">
                             <label for="service">Интересующая услуга</label>
